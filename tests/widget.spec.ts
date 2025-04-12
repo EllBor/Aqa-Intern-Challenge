@@ -35,6 +35,6 @@ test.describe('Uchi.ru widget ', () => {
   test('login input exists', async ({ page }) => {
     const loginInput = widgetPage.getLoginInput();
     
-    await expect(loginInput).toBeVisible();
+    await expect(loginInput).toBeVisible({ timeout: 1000 });
   });
 });
